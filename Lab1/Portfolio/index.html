@@ -1,0 +1,154 @@
+<!-- This is how comments are written in HTML. Each  TODO represents one task. Full points will be awarded only if the intended output and explanation (wherever asked) are provided. At all places where explanations are required, answer them in README.md. All styling references should always be 'inline' unless specified otherwise -->
+
+<!-- TODO: Is <!DOCTYPE html> an HTML tag? What is it doing in an HTML file? Explain in the README.md file. Write "ANS1" at the beginning of your answer. -->
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- TODO: Change title to your name. Explain what changed in the webpage display on doing this in your README. Write "ANS2" at the beginning of your answer. -->
+
+	<title>Maria Vieira Santos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+
+	table, th, td {
+  		border:1px solid black;
+	}
+	th, td {
+  background-color: #96D4D4;
+	}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<!-- TODO: Add a background color to the page.  -->
+
+<body style="background-color:thistle;">
+	<!-- TODO: Change the heading to your name. Use the "style" attribute to increase the font size to 50px. In addition to that, I also changed the color of the heading to purple -->
+
+	<h1 style="font-size:50px;color:purple;" >Maria Vieira Santos</h1>
+	<img src="images/maria.JPG" alt="picture of me" width="200" >
+	<!-- TODO: Change the image to a picture of yours. Create a folder named 'images' in the same location as this html file and link the image. Use the <img> tag. Set the width of the image to 200.  -->
+
+	<!-- TODO: Change the intro text to your bio. Here, I also added a smiling emoji  -->
+
+	<p> Hello everyone &#128516;! I am Maria, I'm a rising senior at UCSD and I'm currently looking for an internship. </p>
+	<p> In my <a href="https://www.linkedin.com/in/maria-santos-a3b5b71b1/" > LinkedIn Profile</a>, you can encounter the projects that I have worked on throughout the years. </p>
+	<p>I'm particularly interested in Digital Design and FPGA Programming. </p>
+
+	<!-- TODO:  -->
+
+	<!-- The hr tag adds a horizontal line to the webpage. It can be used to separate one section from the other -->
+	<hr>
+
+	<!-- TODO:
+	(i) Notice how we start with one tag and close with another. How does this even work? Explain in your README.md file. Write "ANS3" at the beginning of your answer.
+	(ii) Change the heading to am h2 tag -->
+
+	<h2>My schedule</h2>
+
+	<!-- TODO: Insert a table with your schedule - either classes or other activities. Use the <table> tag to create the table. Make the days of the week and the time slots (columns and rows respectively) as headings with the <th> tag. Fill other cells of the table using the <tr> and <td> tags. I styled my table to have a black border and defined a color for the cells -->
+	<table>
+		<tr>
+    		<th>Mon</th>
+    		<th>Tu </th>
+    		<th>Wed</th>
+			<th>Thu</th>
+			<th>Fri</th>
+  		</tr>
+		<tr>
+    		<td>9:00-9:50am <p>
+				LISP1C
+			</p>
+			</td>
+    		<td>8:00-9:20am <p>
+				COGS154
+			</p> </td>
+			<td>9:00-9:50am <p>
+				LISP1C
+			</p>
+			</td>
+    		<td>  8:00-9:20am <p>
+				COGS154
+			</p> </td>
+			<td>9:00-9:50am <p>
+				LISP1C
+			</p>
+
+
+  		</tr>
+		<tr>
+    		<td>12:00-1:50pm <p>
+				ECE140A(Lab)
+			</p></td>
+			<td>9:30-10:50am <p>
+				LISP1CX
+			</p>
+			</td>
+			<td>1:00-1:50pm <p>
+				ECE 107 DI
+			</p>
+			</td>
+			<td>9:30-10:50am <p>
+				LISP1CX
+			</p>
+			</td>
+    		<td></td>
+
+  		</tr>
+		<tr>
+			<td></td>
+    		<td>11:00-12:20pm <p>
+				ECE140A
+			</p></td>
+    		<td></td>
+			<td>11:00-12:20pm <p>
+				ECE140A
+			</p></td>
+    		<td></td>
+  		</tr>
+		<tr>
+			<td></td>
+    		<td>12:30-1:50pm <p>
+				ECE107
+			</p></td>
+    		<td></td>
+			<td>12:30-1:50pm <p>
+				ECE107
+			</p></td>
+    		<td></td>
+  		</tr>
+	</table>
+
+
+	<hr>
+
+	<!-- TODO: 
+	(i) Open the inspect view in your browser and find the 'Contact Me' section
+	(ii) Edit these options in the browser itself. Italicise the 'Contact Me' heading and change the font to 'Times New Roman'. 
+	(iii) Now refresh the page. Do you see any change? Explain what happened. Write "ANS4.1" at the beginning of your answer.
+	(iv) Make the style changes in the HTML file and now check the webpage. Do you see the changes upon refreshing? Explain. Write "ANS4.2" at the beginning of your answer. -->
+	<p style="color:blue;font-family:Times New Roman;font-style: italic;">Contact Me: </p>
+
+	<!-- TODO: Make all the below links appear as bullet points (HINT: unordered lists) -->
+
+
+	<ol>
+		<!-- TODO: Change 'My Webpage' to the 'ECE UCSD Homepage'; can you make the link to open in a new tab upon clicking? -->
+
+        <li> <a href="https://ece.ucsd.edu/undergraduate/undergraduate-programs/computer-engineering-major">ECE UCSD Homepage</a> </li>
+		<!-- TODO: Link the resume to your resume (either in a folder same as this file or an external drive link). The file should be downloaded on clicking. If you do not want to link a resume, embed another PDF of your choice and change the name accordingly -->
+        <li> <a href="https://docs.google.com/document/d/1mKY_TW3Cy_UoOViTzPgRM8__1x2a5Gt7jbmgGWQmUuE/edit?usp=sharing">My resume</a> </li>
+		<!-- TODO: Add a link to your email. Make the default subject of the email as "Hello" -->
+        <li>  <a href="mailto:masantos@ucsd.edu?subject=Hello">Email</a> </li>
+    </ol>
+
+	<!-- TODO: Extra: Can you add a row of icons pointing to your social media, github etc. after this list?  -->
+	<span> --> </span>
+	<a href="https://github.com/mariavs11" >
+   <i class="fa fa-github" style="font-size:36px"></i>
+    </a>
+</body>
+</html>
