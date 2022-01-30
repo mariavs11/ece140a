@@ -20,14 +20,14 @@ For this tutorial, we created our own web server and hosted a webpage on it. In 
 ### Tutorial 4
 This tutorial helped us understand the concept of REST that consists on using the web server as a source of data.
 
-###Challenge 1
+### Challenge 1
 For this challenge, I learned how to host my own portfolio on the server using the portfolio created on Lab 1.
 We were taught how to create routes to other pages. In this case, we created 2 routes: /home, the home directory, that pointed to index.html and /music that pointed to music.html.
 
 ![Home Page](./Tutorials/Tutorial_Pyramid_Basics/public/homepage.png)
 ![Music](./Tutorials/Tutorial_Pyramid_Basics/public/musichtml.png)
 
-###Challenge 2
+### Challenge 2
 For this challenge, we hosted a webpage called Triton Gallery that took inputs from the client, using HTML and RESTful resources.
 The webpage had two buttons: 
 Display: that when clicked prompted the webpage to display an image of Geisel according to the input 1-5;
