@@ -1,4 +1,4 @@
-##LAB 3
+## LAB 3
  
 ### Tutorial 1
 In this tutorial, we learned how to use the numpy library for manipulating arrays.
@@ -7,8 +7,11 @@ In this tutorial, we learned how to use the numpy library for manipulating array
 Here, we learned how to use opencv to make changes to images.
 
 Question 1
+
 ![Blue Geisel](./Tutorials/Tutorial_REST/public/geiselblue.png)
+
 Question 2
+
 ![Squeezed Geisel](./Tutorials/Tutorial_REST/public/squeezedimage.png)
 
 ### Tutorial 3
