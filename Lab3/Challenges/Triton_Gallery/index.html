@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <title> Triton Gallery </title>
+ </head>
+ <body>
+    <h1>Triton Gallery</h1>
+   <input type=number value="1" max="5" min="1" id="inputdisplay">  <!-- takes in user input -->
+   <input type="button" value="Display" onclick="click_display()"> <!-- associates function in JS with clicking the button, i.e will submit your input -->
+   <img src="" id="image"> <!-- Displays image, notice how there is no value for the scr attribute, it is only a placeholder for when we retrieve the image from the server -->
+   <script type="text/javascript" src="rest.js"></script> <!-- tells HTML that there is a Javascript file -->
+
+    <input type=number value="1" max="5" min="1" id="inputprice">  <!-- takes in user input -->
+    <input type="button" value="Price" onclick="click_price()"> <!-- associates function in JS with clicking the button, i.e will submit your input -->
+    <span> :</span><span  class ="finalprice" id="price"> </span>
+    <script type="text/javascript" src="rest.js"></script>
+ </body>
+</html>
