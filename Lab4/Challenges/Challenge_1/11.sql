@@ -1,0 +1,1 @@
+SELECT artist,SUM(duration_ms) FROM Songs GROUP BY artist ORDER BY SUM(duration_ms) ASC;
