@@ -13,7 +13,7 @@ db = mysql.connect(user=db_user, password=db_pass, host=db_host, database=db_nam
 cursor = db.cursor()
 
 cursor.execute("CREATE DATABASE IF NOT EXISTS Triton_Gallery;") # creates DB Triton Gallery
-cursor.execute("USE Triton_Gallery")
+cursor.execute("USE Triton_Gallery;")
 cursor.execute("DROP TABLE IF EXISTS Gallery_Details;")
 
 try:

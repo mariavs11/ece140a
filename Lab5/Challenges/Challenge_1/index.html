@@ -8,22 +8,29 @@
     <h1> The Triton Gallery Part 2 </h1>
     <form>
       <label for="height">Choose a height range:</label>
-      <select name="height" id="height" >
-        <option value='150-160'>150-160</option> 150-160, 160-170, 170-180, 180-190
+      <select name="height" id="height"  >
+        <option value='150-160'>150-160</option>
         <option value='160-170'>160-170</option>
         <option value='170-180'>170-180</option>
         <option value='180-190'>180-190</option>
+
       </select>
       <label for="age">Choose an age range:</label>
       <select name="age" id="age" >
+
         <option value='20-30'>20-30</option>
         <option value='30-40'>30-40</option>
         <option value='40-50'>40-50</option>
         <option value='50-60'>50-60</option>
         <option value='60-70'>60-70</option>
+        <script type="text/javascript" src="rest.js"></script>
       </select>
-      <input type="button" value="Submit" onclick="getInfo()">
+
+      <div>Both age and height: </div><input type="button" value="Submit" onclick="getInfo()">
+      <div>Just age: </div><input type="button" value="Submit" onclick="getAge()">
+      <div>Just height: </div><input type="button" value="Submit" onclick="getHeight()">
     </form>
+    <div id="Owner"></div>
     <img src="" id="image">
     <div>
       <br>
