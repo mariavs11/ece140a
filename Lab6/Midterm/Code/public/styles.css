@@ -1,0 +1,128 @@
+/* ECE 140A Midterm: smartTemp*/
+/* Author: Odemuno Ogelohwohor, Maria Santos*/
+
+/* Format header1 */
+h1 {
+    color: white;
+    font-family: courier;
+}
+
+/* Format header2 */
+h2 {
+    color: white;
+    font-family: courier;
+}
+
+/* Format header3 */
+h3 {
+    color: black;
+    font-family: courier;
+}
+
+/* Format paragraph blocks */
+p {
+    color: black;
+    font-family: courier;
+}
+
+/* Format div blocks */
+div {
+    color: black;
+    font-family: courier;
+    text-align: center;
+    font-size: 19px;
+}
+
+/* change the color of the output*/
+span[id] {
+   color: white;
+}
+
+/* Container animation transition */
+@keyframes example {
+  from {background-color: #29A3CC;}
+  to {background-color: white;}
+}
+
+
+/* Containter with animations */
+.container {
+  border-radius: 10px;
+  padding-top: 0.5px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: white;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+/* HTML body */
+body {
+    background-color: #29A3CC;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* For dropdown buttons */
+.inputSelect {
+    color: black;
+    font-family: courier;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* For submit buttons */
+.submitButton {
+    font-family: courier;
+    background-color: black;
+    opacity: 0.6;
+    max-width: 160px;
+    line-height: 23px;
+    border: none;
+    padding: 3px 10px;
+    font-size: 17px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+ /* Animation for hovering over a button */
+.submitButton:hover {
+    background-color: #969696;
+    color: black;
+}
+
+/* Contains the main background information */
+.mainContainer {
+    width: auto;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Styling for the Jinja Page */
+#sensordata {
+  font-family: courier;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#sensordata td, #sensordata th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#sensordata tr:nth-child(even){background-color: #f2f2f2;}
+
+#sensordata tr:hover {background-color: #B0E0E6;}
+
+#sensordata th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: grey;
+  color: white;
+}

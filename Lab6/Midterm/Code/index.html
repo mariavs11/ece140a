@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> smartTemp </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <!-- page header -->
+    <h1> <center> smartTemp </center></h1>
+    <h2> <center> for home temperature monitoring </center></h2>
+    <br>
+
+    <!-- Button1: selection for current data (all sensors) begins -->
+    <div class="container">
+      <p> <center> This would calculate how close you are to the temperature sensor then<br> displays the current temperature of your room on the LCD screen. </center> </p>
+      <form>
+        <div> <center>
+          Get current data:
+        <input class="submitButton" id="both" type="button" value="Submit" onclick="getData()">
+        </center> </div>
+      </form>
+   </div> <!-- all sensors selection ends -->
+
+      <br>
+      <br>
+
+    <!-- Button2: temp selection begins -->
+    <div class="container">
+      <p> <center> Here, you can use the submit button to get the <br> highest, lowest, or average temperature for the day.</center> </p>
+       <form>
+        <label for="temprange">Choose temperature metric:</label>
+        <select name="temprange" class="inputSelect" id="temprange"  >
+          <option value='highest'>highest</option>
+          <option value='lowest'>lowest</option>
+          <option value='average'>average</option>
+        </select>
+        <input type="button" class="submitButton" value="Submit" onclick="getTemp()">
+       </form> 
+      </div> <!-- temp selection ends -->
+
+      <br>
+      <br>
+
+     <!-- Button3: retrieve 2, 4, or 6 of the latest records -->
+     <div class="container">
+      <p> <center> Search through our database to get the most recent records. </center> </p>
+      <form>
+      <label for="numrows">Choose number of lastest records:</label>
+      <select name="numrows" class="inputSelect" id="numrows"  >
+        <option value='2'>2</option>
+        <option value='4'>4</option>
+        <option value='6'>6</option>
+      </select>
+      <input type="button" class="submitButton" value="Submit" onclick="getRows()">
+      </form> 
+     </div><!-- record retrieval ends -->
+
+      <br>
+      <br>
+
+      <!-- Button4: temp display on output device begins -->
+    <div class="container">
+      <p> <center> Instead of displaying the temperature on this page, <br> you can view it on our LCD screen! </center> </p>
+      <form>
+        <div> <center>
+          Click to view on LCD:
+        <input class="submitButton" id="both" type="button" value="LCD Display" onclick="getDisplay()">
+        </center> </div>
+      </form>
+      </div> <!-- temp selection ends -->
+
+      <br>
+      <br>
+
+    <!-- output when submit button is clicked for temp and current sensors -->
+    <h3> <center> View Results Here</center></h3>
+    <div>
+      <div id="error"></div>
+      <span> ID: </span><span id="id"></span> <br>
+      <span> TIME: </span><span id="created_at"></span> <br>
+      <span> DISTANCE: </span><span id="distance"></span> <br>
+      <span> TEMPERATURE: </span><span id="temperature"></span>
+    </div>
+  </div>
+
+    <!-- for the javascript connection -->
+    <script type="text/javascript" src="rest.js"></script>
+  </body>
+</html>
