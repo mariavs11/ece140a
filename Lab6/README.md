@@ -95,3 +95,9 @@ This is our final product:
 
 
 ![Website](./images/website.png)
+
+## Instructions 
+1. Run python init-db.py (to create database Lab6 and table SensorData)
+2. Run python app0.py (to insert the sensor values into the table)
+3. Simultaneously run app0.py and app.py. They will work together to enter live data onto the webpage by querying the database the is being updated by app0.py.
+4. Type 'localhost:6543' into your browser to see the website 
